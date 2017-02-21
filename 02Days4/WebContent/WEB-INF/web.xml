@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+
+	<context-param>
+		<param-name>yyy</param-name>
+		<param-value>홍길동</param-value>
+	</context-param>
+	<context-param>
+		<param-name>zzz</param-name>
+		<param-value>c:\\temp\dffdf</param-value>
+	</context-param>
+
+	<servlet>
+		<servlet-name>ContextServlet</servlet-name>
+		<servlet-class>com.controller.ContextServlet</servlet-class>
+		<init-param>
+			<param-name>dddfff</param-name>
+			<param-value>DDDFFF</param-value>
+		</init-param>
+	</servlet>
+
+	<servlet>
+		<servlet-name>ContextServlet2</servlet-name>
+		<servlet-class>com.controller.ContextServlet2</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ContextServlet</servlet-name>
+		<url-pattern>/con</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ContextServlet2</servlet-name>
+		<url-pattern>/con2</url-pattern>
+	</servlet-mapping>
+</web-app>
